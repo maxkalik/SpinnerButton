@@ -1,3 +1,7 @@
+<p align="center">
+<img src="icon.jpg" style="border-radius: 60px" width="200" />
+</p>
+
 # SpinnerButton
 
 [![CI Status](https://img.shields.io/travis/maxkalik/SpinnerButton.svg?style=flat)](https://travis-ci.org/maxkalik/SpinnerButton)
@@ -7,7 +11,7 @@
 
 ## Example
 
-![CurRates App](spinner-button.gif)
+<img src="spinner-button.gif" style="border: 1px solid silver; border-radius: 2px">
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
