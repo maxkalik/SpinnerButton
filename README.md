@@ -30,44 +30,38 @@ pod 'SpinnerButton'
 
 ## Usage example
 
-### Initialization
-
-```objc
-  self.button = [[SpinnerButton alloc] init];
-```
-
-### Start loading animating
+#### Start loading animating
 
 ```objc
   [self.button startAnimating];
 ```
 
-### Stop loading animation
+#### Stop loading animation
 
 ```objc
   [self.button stopAnimating];
 ```
 
-### Stroke line width
+#### Stroke line width
 
 ```objc
   [self.button setStrokeLineWidth:@2];
 ```
 
-### Single stroke color
+#### Single stroke color
 
 ```objc
   [self.button setStrokeColor:UIColor.redColor];
 ```
 
-### Make a gradient with colors
+#### Make a gradient with colors
 
 ```objc
   NSArray *colors = [[NSArray alloc] initWithObjects:UIColor.blueColor, UIColor.redColor, UIColor.orangeColor, nil];
   [self.button setStrokeColors:colors];
 ```
 
-### Time interval of animation duration
+#### Time interval of animation duration
 
 ```objc
   self.button.timeInterval = 0.5;
