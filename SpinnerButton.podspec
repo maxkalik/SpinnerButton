@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SpinnerButton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SpinnerButton.'
+  s.summary          = 'UIKit button with loading state'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

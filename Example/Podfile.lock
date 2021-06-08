@@ -1,0 +1,16 @@
+PODS:
+  - SpinnerButton (0.1.0)
+
+DEPENDENCIES:
+  - SpinnerButton (from `../`)
+
+EXTERNAL SOURCES:
+  SpinnerButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SpinnerButton: 4dea53565e86fdb92cdd5dc892fa33dd3ff27c29
+
+PODFILE CHECKSUM: ecb27ecde83b1312cb86b5007baa7a3a9266c39e
+
+COCOAPODS: 1.10.0.rc.1

@@ -1,0 +1,6 @@
+framework module SpinnerButton {
+  umbrella header "SpinnerButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

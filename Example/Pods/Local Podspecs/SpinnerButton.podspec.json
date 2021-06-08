@@ -1,0 +1,22 @@
+{
+  "name": "SpinnerButton",
+  "version": "0.1.0",
+  "summary": "A short description of SpinnerButton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/maxkalik/SpinnerButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "maxkalik": "maxkalik@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/maxkalik/SpinnerButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SpinnerButton/Classes/**/*"
+}
