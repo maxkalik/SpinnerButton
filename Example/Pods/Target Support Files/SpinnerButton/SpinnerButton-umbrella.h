@@ -1,6 +1,5 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
-#import <SpinnerButton/SpinnerButton.h>
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -11,6 +10,7 @@
 #endif
 #endif
 
+#import "SpinnerButton.h"
 
 FOUNDATION_EXPORT double SpinnerButtonVersionNumber;
 FOUNDATION_EXPORT const unsigned char SpinnerButtonVersionString[];

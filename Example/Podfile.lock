@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SpinnerButton: 4dea53565e86fdb92cdd5dc892fa33dd3ff27c29
+  SpinnerButton: 4054b444ff466d77a95f8c748d60ec51b2c5fd62
 
 PODFILE CHECKSUM: ecb27ecde83b1312cb86b5007baa7a3a9266c39e
 

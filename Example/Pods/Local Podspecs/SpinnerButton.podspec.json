@@ -1,7 +1,7 @@
 {
   "name": "SpinnerButton",
   "version": "0.1.0",
-  "summary": "A short description of SpinnerButton.",
+  "summary": "UIKit button with loading state",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/maxkalik/SpinnerButton",
   "license": {
