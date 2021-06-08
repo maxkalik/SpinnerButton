@@ -8,10 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpinnerButton'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'UIKit button with loading state'
-  s.description      = 'Modified UIButton with loading state created as a stroke spinned around the button.
-                        The component has two state: default state without spinning stroke and loading state with spinning stroke.'
+  s.description      = '<<-DESC
+  Modified UIButton with loading state created as a stroke spinned around the button.
+  The component has two state: default state without spinning stroke and loading state with spinning stroke.
+                       DESC'
   s.homepage         = 'https://github.com/maxkalik/SpinnerButton'
   s.screenshots      = 'https://www.maxkalik.com/images/spinner-button.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
