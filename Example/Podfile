@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SpinnerButton_Example' do
+  pod 'SpinnerButton', :path => '../'
+
+  target 'SpinnerButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
