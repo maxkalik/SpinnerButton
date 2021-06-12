@@ -18,9 +18,12 @@
         self.frame = frame;
         self.loading = NO;
         self.strokeColor = UIColor.systemBlueColor;
+        self.strokeLineWidth = @5;
+        self.timeInterval = 1.5;
         self.shapeLayer = [[CAShapeLayer alloc] init];
         self.gradientLayer = [[CAGradientLayer alloc] init];
         [self setupCommon];
+        [self setupTitle];
     }
     return self;
 }
@@ -56,11 +59,11 @@
 - (void)stopAnimating
 {
     if (self.loading == YES) {
+        self.loading = NO;
         [UIView animateWithDuration:0.1 animations:^{
             self.gradientLayer.opacity = 0;
         } completion:^(BOOL finished) {
             [self.gradientLayer removeFromSuperlayer];
-            self.loading = NO;
         }];
     }
 }
@@ -73,15 +76,16 @@
     self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];
     [self setTitleColor: UIColor.systemBlueColor forState: UIControlStateNormal];
     self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
-    
-    if (self.titleLabel.text.length == 0) {
-        [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
-    }
+}
+
+- (void)setupTitle
+{
+    [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
 }
 
 - (void)setupShapeLayer
 {
-    self.shapeLayer.lineWidth = [self getStrokeLineWidth];
+    self.shapeLayer.lineWidth = [self.strokeLineWidth doubleValue];
     self.shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.layer.cornerRadius].CGPath;
     self.shapeLayer.strokeColor = UIColor.blackColor.CGColor;
     self.shapeLayer.fillColor = UIColor.clearColor.CGColor;
@@ -107,7 +111,7 @@
     strokeEndAnimation.toValue = [NSNumber numberWithFloat:1];
     
     CAAnimationGroup *strokeAnimationGroup = [[CAAnimationGroup alloc] init];
-    strokeAnimationGroup.duration = [self getTimeInterval];
+    strokeAnimationGroup.duration = self.timeInterval;
     strokeAnimationGroup.repeatDuration = INFINITY;
     strokeAnimationGroup.animations = [[NSArray alloc] initWithObjects:strokeStartAnimation, strokeEndAnimation, nil];
     [self.shapeLayer addAnimation:strokeAnimationGroup forKey:nil];
@@ -125,25 +129,6 @@
         [colors addObject:(id)self.strokeColor.CGColor];
     }
     return colors;
-}
-
-- (CGFloat)getStrokeLineWidth
-{
-    if (self.strokeLineWidth != NULL) {
-        return [self.strokeLineWidth doubleValue];
-    } else {
-        return 5;
-    }
-}
-
-
-- (CFTimeInterval)getTimeInterval
-{
-    if (self.timeInterval > 0) {
-        return self.timeInterval;
-    } else {
-        return 1.5;
-    }
 }
 
 - (void)setHighlighted:(BOOL)highlighted

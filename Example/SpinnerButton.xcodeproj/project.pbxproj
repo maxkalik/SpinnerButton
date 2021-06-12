@@ -40,7 +40,7 @@
 		163BC8C562357172DC0C4F3F /* Pods-SpinnerButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinnerButton_Example.debug.xcconfig"; path = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7EECC2D495A1155B36FEF3 /* Pods-SpinnerButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinnerButton_Example.release.xcconfig"; path = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4637526F314EB21577DA9733 /* Pods-SpinnerButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinnerButton_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		468E92EA35157F1E7DB40F8A /* SpinnerButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SpinnerButton.podspec; path = ../SpinnerButton.podspec; sourceTree = "<group>"; };
+		468E92EA35157F1E7DB40F8A /* SpinnerButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpinnerButton.podspec; path = ../SpinnerButton.podspec; sourceTree = "<group>"; };
 		4C96DB5B7DA5CE20AF2F39E2 /* Pods-SpinnerButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinnerButton_Tests.release.xcconfig"; path = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SpinnerButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnerButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,9 +62,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E03F25289E5231AD8353C7D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7E03F25289E5231AD8353C7D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDA3E2EA53A07E896B712362 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BDA3E2EA53A07E896B712362 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF2871EB0DA1411C23DDF3BB /* Pods_SpinnerButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinnerButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB645CC2F58B1C39FD3CD30 /* Pods_SpinnerButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpinnerButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				4637526F314EB21577DA9733 /* Pods-SpinnerButton_Tests.debug.xcconfig */,
 				4C96DB5B7DA5CE20AF2F39E2 /* Pods-SpinnerButton_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +247,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = maxkalik;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P353H6D448;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = P353H6D448;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +498,7 @@
 			baseConfigurationReference = 163BC8C562357172DC0C4F3F /* Pods-SpinnerButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P353H6D448;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpinnerButton/SpinnerButton-Prefix.pch";
 				INFOPLIST_FILE = "SpinnerButton/SpinnerButton-Info.plist";
@@ -510,6 +515,7 @@
 			baseConfigurationReference = 3C7EECC2D495A1155B36FEF3 /* Pods-SpinnerButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P353H6D448;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpinnerButton/SpinnerButton-Prefix.pch";
 				INFOPLIST_FILE = "SpinnerButton/SpinnerButton-Info.plist";
@@ -526,6 +532,7 @@
 			baseConfigurationReference = 4637526F314EB21577DA9733 /* Pods-SpinnerButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P353H6D448;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +558,7 @@
 			baseConfigurationReference = 4C96DB5B7DA5CE20AF2F39E2 /* Pods-SpinnerButton_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P353H6D448;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

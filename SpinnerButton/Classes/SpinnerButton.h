@@ -6,7 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SpinnerButton : UIButton
 
-@property (nonatomic, assign, getter=isWorking) BOOL loading;
+@property (nonatomic, assign, getter=isLoading) BOOL loading;
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, strong, nullable) NSArray *strokeColors;
 @property (nonatomic, strong, nullable) NSNumber *strokeLineWidth;
