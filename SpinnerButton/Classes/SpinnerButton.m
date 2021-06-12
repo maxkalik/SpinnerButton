@@ -9,6 +9,8 @@
 
 @end
 
+#define DEFAULT_COLOR [UIColor colorWithRed:10.0f/255 green:120.0f/255  blue:1 alpha:1.0]
+
 @implementation SpinnerButton
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -17,7 +19,7 @@
     if (self) {
         self.frame = frame;
         self.loading = NO;
-        self.strokeColor = UIColor.systemBlueColor;
+        self.strokeColor = DEFAULT_COLOR;
         self.strokeLineWidth = @5;
         self.timeInterval = 1.5;
         self.shapeLayer = [[CAShapeLayer alloc] init];
@@ -74,7 +76,7 @@
     self.layer.masksToBounds = YES;
     self.clipsToBounds = YES;
     self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];
-    [self setTitleColor: UIColor.systemBlueColor forState: UIControlStateNormal];
+    [self setTitleColor: DEFAULT_COLOR forState: UIControlStateNormal];
     self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
 }
 
