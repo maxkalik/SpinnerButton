@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpinnerButton'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'UIKit button with loading state'
   s.description      = '<<-DESC
   Modified UIButton with loading state created as a stroke spinned around the button.
