@@ -25,7 +25,8 @@
     return self;
 }
 
-- (void)layoutSubviews {
+- (void)layoutSubviews
+{
     [super layoutSubviews];
     if (self.loading == true) {
         [self setupShapeLayer];
@@ -34,7 +35,8 @@
     }
 }
 
-- (void)startAnimating {
+- (void)startAnimating
+{
     if (self.loading == NO) {
         self.loading = YES;
         self.gradientLayer.opacity = 0;
@@ -43,14 +45,16 @@
     }
 }
 
-- (void)performAnimating {
+- (void)performAnimating
+{
     [self setupAnimation];
     [UIView animateWithDuration:0.1 animations:^{
         self.gradientLayer.opacity = 1;
     }];
 }
 
-- (void)stopAnimating {
+- (void)stopAnimating
+{
     if (self.loading == YES) {
         [UIView animateWithDuration:0.1 animations:^{
             self.gradientLayer.opacity = 0;
@@ -61,23 +65,30 @@
     }
 }
 
-- (void)setupCommon {
+- (void)setupCommon
+{
     self.layer.cornerRadius = 10;
     self.layer.masksToBounds = YES;
     self.clipsToBounds = YES;
     self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];
     [self setTitleColor: UIColor.systemBlueColor forState: UIControlStateNormal];
     self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
+    
+    if (self.titleLabel.text.length == 0) {
+        [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
+    }
 }
 
-- (void)setupShapeLayer {
+- (void)setupShapeLayer
+{
     self.shapeLayer.lineWidth = [self getStrokeLineWidth];
     self.shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.layer.cornerRadius].CGPath;
     self.shapeLayer.strokeColor = UIColor.blackColor.CGColor;
     self.shapeLayer.fillColor = UIColor.clearColor.CGColor;
 }
 
-- (void)setupGradientLayer {
+- (void)setupGradientLayer
+{
     self.gradientLayer.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     self.gradientLayer.colors = [self getColors];
     self.gradientLayer.startPoint = CGPointMake(0, 0);
@@ -85,7 +96,8 @@
     self.gradientLayer.mask = self.shapeLayer;
 }
 
-- (void)setupAnimation {
+- (void)setupAnimation
+{
     CABasicAnimation *strokeStartAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
     strokeStartAnimation.fromValue = [NSNumber numberWithFloat:-1];
     strokeStartAnimation.toValue = [NSNumber numberWithFloat:1];
@@ -101,7 +113,8 @@
     [self.shapeLayer addAnimation:strokeAnimationGroup forKey:nil];
 }
 
-- (NSMutableArray*)getColors {
+- (NSMutableArray*)getColors
+{
     NSMutableArray *colors = [[NSMutableArray alloc] init];
     if (self.strokeColors != NULL) {
         for (UIColor *color in self.strokeColors) {
@@ -114,7 +127,8 @@
     return colors;
 }
 
-- (CGFloat)getStrokeLineWidth {
+- (CGFloat)getStrokeLineWidth
+{
     if (self.strokeLineWidth != NULL) {
         return [self.strokeLineWidth doubleValue];
     } else {
@@ -123,7 +137,8 @@
 }
 
 
-- (CFTimeInterval)getTimeInterval {
+- (CFTimeInterval)getTimeInterval
+{
     if (self.timeInterval > 0) {
         return self.timeInterval;
     } else {
@@ -131,7 +146,8 @@
     }
 }
 
-- (void)setHighlighted:(BOOL)highlighted {
+- (void)setHighlighted:(BOOL)highlighted
+{
     if (!self.highlighted && highlighted) {
         [self hightlight];
     } else {
@@ -139,13 +155,15 @@
     }
 }
 
-- (void)hightlight {
+- (void)hightlight
+{
     [UIView animateWithDuration:0.2 animations:^{
         self.alpha = 0.5;
     }];
 }
 
-- (void)unhightlight {
+- (void)unhightlight
+{
     [UIView animateWithDuration:0.2 animations:^{
         self.alpha = 1;
     }];

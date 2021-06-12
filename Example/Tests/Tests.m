@@ -7,8 +7,11 @@
 //
 
 @import XCTest;
+@import SpinnerButton;
 
 @interface Tests : XCTestCase
+
+@property (nonatomic, strong) SpinnerButton *button;
 
 @end
 
@@ -17,13 +20,20 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.button = [[SpinnerButton alloc] init];
 }
 
 - (void)tearDown
 {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testInitialButtonTitleNormalState
+{
+    NSString *title = self.button.currentTitle;
+    NSString *expectedResult = @"Spinner Button";
+    XCTAssertTrue([title isEqualToString:expectedResult], @"Initial button title %@ is not a %@", expectedResult, title);
 }
 
 - (void)testExample

@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self initButton];
     [self setupButtonCommons];
     [self setupButtonConstraints];
 }
@@ -32,10 +32,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setupButtonCommons
+- (void)initButton
 {
     self.button = [[SpinnerButton alloc] init];
     [self.view addSubview:self.button];
+}
+
+- (void)setupButtonCommons
+{
     [self.button setTitle:@"Button" forState:UIControlStateNormal];
     [self.button addTarget:self action:@selector(buttonTapped) forControlEvents:UIControlEventTouchUpInside];
 }
