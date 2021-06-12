@@ -30,7 +30,7 @@ pod 'SpinnerButton'
 
 ## Usage example
 
-Start loading animating:
+Start loading animation:
 ```objc
   [self.button startAnimating];
 ```
@@ -40,26 +40,27 @@ Stop loading animation:
   [self.button stopAnimating];
 ```
 
-Stroke line width:
+Stroke line width of the animated border (default: 5):
 ```objc
   [self.button setStrokeLineWidth:@2];
 ```
 
-Single stroke color:
+Define a color of the animated stroke:
 ```objc
   [self.button setStrokeColor:UIColor.redColor];
 ```
 
-Make a gradient with colors:
+Define mulitple colors to make gradient in the animated stroke:
 ```objc
   NSArray *colors = [[NSArray alloc] initWithObjects:UIColor.blueColor, UIColor.redColor, UIColor.orangeColor, nil];
   [self.button setStrokeColors:colors];
 ```
 
-Time interval of animation duration
+Time interval of animation duration:
 ```objc
   self.button.timeInterval = 0.5;
 ```
+
 
 ## Author
 
