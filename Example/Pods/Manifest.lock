@@ -1,5 +1,5 @@
 PODS:
-  - SpinnerButton (0.1.0)
+  - SpinnerButton (0.1.1)
 
 DEPENDENCIES:
   - SpinnerButton (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SpinnerButton: 4054b444ff466d77a95f8c748d60ec51b2c5fd62
+  SpinnerButton: 0e2e5774d8a0b9b7fc2daf8eede0c80875fcff96
 
 PODFILE CHECKSUM: ecb27ecde83b1312cb86b5007baa7a3a9266c39e
 

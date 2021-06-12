@@ -7,8 +7,11 @@
 //
 
 @import XCTest;
+@import SpinnerButton;
 
 @interface Tests : XCTestCase
+
+@property (nonatomic, strong) SpinnerButton *button;
 
 @end
 
@@ -17,18 +20,59 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.button = [[SpinnerButton alloc] init];
 }
 
-- (void)tearDown
+-(void)testTitle:(NSString*)expectedTitle
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    NSString *title = self.button.currentTitle;
+    XCTAssertTrue([title isEqualToString:expectedTitle], @"Button title %@ is not equal to %@", expectedTitle, title);
 }
 
-- (void)testExample
+- (void)testInitialTitle
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    [self testTitle:@"Spinner Button"];
+}
+
+- (void)testCustomTitle
+{
+    NSString *customTitle = @"Test Title";
+    [self.button setTitle:customTitle forState:UIControlStateNormal];
+    [self testTitle:customTitle];
+}
+
+- (void)testStrokeLineWidth:(NSNumber*)expectedLineWidth
+{
+    NSNumber *strokeLineWidth = self.button.strokeLineWidth;
+    XCTAssertTrue([strokeLineWidth isEqualToNumber:expectedLineWidth], @"Initial button stroke should be equal %@, but got %@", strokeLineWidth, expectedLineWidth);
+}
+
+- (void)testInitialStrokeLineWidth
+{
+    [self testStrokeLineWidth:@5];
+}
+
+- (void)testCustomStrokeLineWidth
+{
+    NSNumber *strokeLineWidth = @3;
+    [self.button setStrokeLineWidth:strokeLineWidth];
+    [self testStrokeLineWidth:strokeLineWidth];
+}
+
+- (void)testInitialTimeInterval
+{
+    CFTimeInterval timeInterval = self.button.timeInterval;
+    CFTimeInterval expectedResult = 1.5;
+    XCTAssertTrue(timeInterval == expectedResult, @"Initial button animation time interval %f is not equal to %f", expectedResult, timeInterval);
+}
+
+- (void)testLoadingState
+{
+    [self.button startAnimating];
+    XCTAssertTrue(self.button.loading);
+    
+    [self.button stopAnimating];
+    XCTAssertFalse(self.button.loading);
 }
 
 @end
