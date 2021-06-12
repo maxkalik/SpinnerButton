@@ -4,7 +4,7 @@
 
 # SpinnerButton
 
-[![CI Status](https://img.shields.io/travis/maxkalik/SpinnerButton.svg?style=flat)](https://travis-ci.org/maxkalik/SpinnerButton)
+[![Build Status](https://travis-ci.com/maxkalik/SpinnerButton.svg?branch=master)](https://travis-ci.com/maxkalik/SpinnerButton)
 [![Version](https://img.shields.io/cocoapods/v/SpinnerButton.svg?style=flat)](https://cocoapods.org/pods/SpinnerButton)
 [![License](https://img.shields.io/cocoapods/l/SpinnerButton.svg?style=flat)](https://cocoapods.org/pods/SpinnerButton)
 [![Platform](https://img.shields.io/cocoapods/p/SpinnerButton.svg?style=flat)](https://cocoapods.org/pods/SpinnerButton)
