@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'maxkalik' => 'maxkalik@gmail.com' }
   s.source           = { :git => 'https://github.com/maxkalik/SpinnerButton.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/maxkalik'
+  s.social_media_url = 'http://maxkalik.com'
   s.ios.deployment_target = '9.0'
   s.source_files     = 'SpinnerButton/Classes/**/*'
   s.frameworks       = 'UIKit'
