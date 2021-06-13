@@ -1,6 +1,6 @@
 {
   "name": "SpinnerButton",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "summary": "UIKit button with loading state",
   "description": "<<-DESC\n  Modified UIButton with loading state created as a stroke spinned around the button.\n  The component has two state: default state without spinning stroke and loading state with spinning stroke.\n                       DESC",
   "homepage": "https://github.com/maxkalik/SpinnerButton",
@@ -14,9 +14,9 @@
   },
   "source": {
     "git": "https://github.com/maxkalik/SpinnerButton.git",
-    "tag": "0.1.1"
+    "tag": "0.1.3"
   },
-  "social_media_url": "https://twitter.com/maxkalik",
+  "social_media_url": "http://maxkalik.com",
   "platforms": {
     "ios": "9.0"
   },
