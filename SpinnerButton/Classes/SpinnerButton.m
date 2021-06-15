@@ -53,7 +53,7 @@
     self.shapeLayer = [[CAShapeLayer alloc] init];
     self.gradientLayer = [[CAGradientLayer alloc] init];
     [self setupCommon];
-    [self setupTitle];
+    [self setupDefaultTitle];
 }
 
 - (void)setupCommon
@@ -66,7 +66,7 @@
     self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
 }
 
-- (void)setupTitle
+- (void)setupDefaultTitle
 {
     [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
 }

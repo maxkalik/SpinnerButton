@@ -41,20 +41,20 @@
     [self testTitle:customTitle];
 }
 
-- (void)testStrokeLineWidth:(NSNumber*)expectedLineWidth
+- (void)testStrokeLineWidth:(CGFloat)expectedLineWidth
 {
-    NSNumber *strokeLineWidth = self.button.strokeLineWidth;
-    XCTAssertTrue([strokeLineWidth isEqualToNumber:expectedLineWidth], @"Initial button stroke should be equal %@, but got %@", strokeLineWidth, expectedLineWidth);
+    CGFloat strokeLineWidth = self.button.strokeLineWidth;
+    XCTAssertTrue(strokeLineWidth == expectedLineWidth, @"Initial button stroke should be equal %f, but got %f", strokeLineWidth, expectedLineWidth);
 }
 
 - (void)testInitialStrokeLineWidth
 {
-    [self testStrokeLineWidth:@5];
+    [self testStrokeLineWidth:5];
 }
 
 - (void)testCustomStrokeLineWidth
 {
-    NSNumber *strokeLineWidth = @3;
+    CGFloat strokeLineWidth = 3;
     [self.button setStrokeLineWidth:strokeLineWidth];
     [self testStrokeLineWidth:strokeLineWidth];
 }
@@ -62,7 +62,7 @@
 - (void)testInitialTimeInterval
 {
     CFTimeInterval timeInterval = self.button.timeInterval;
-    CFTimeInterval expectedResult = 1.5;
+    double expectedResult = 2;
     XCTAssertTrue(timeInterval == expectedResult, @"Initial button animation time interval %f is not equal to %f", expectedResult, timeInterval);
 }
 
