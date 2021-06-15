@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/maxkalik/SpinnerButton.git', :tag => s.version.to_s }
   s.social_media_url = 'http://maxkalik.com'
   s.ios.deployment_target = '9.0'
-  s.source_files     = 'SpinnerButton/Classes/SpinnerButton.h'
+  s.source_files     = 'SpinnerButton/Classes/**/*'
   s.frameworks       = 'UIKit'
 end
