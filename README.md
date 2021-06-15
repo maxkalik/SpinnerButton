@@ -42,7 +42,12 @@ Stop loading animation:
 
 Stroke line width of the animated border (default: 5):
 ```objc
-  [self.button setStrokeLineWidth:@2];
+  self.button.strokeLineWidth = 2;
+```
+
+Define a corner radius (default: 5):
+```objc
+  self.button.cornerRadius = 5;
 ```
 
 Define a color of the animated stroke:

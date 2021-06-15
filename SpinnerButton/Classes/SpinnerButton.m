@@ -13,19 +13,22 @@
 
 @implementation SpinnerButton
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.loading = NO;
+        [self setup];
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.frame = frame;
-        self.loading = NO;
-        self.strokeColor = DEFAULT_COLOR;
-        self.strokeLineWidth = @5;
-        self.timeInterval = 1.5;
-        self.shapeLayer = [[CAShapeLayer alloc] init];
-        self.gradientLayer = [[CAGradientLayer alloc] init];
-        [self setupCommon];
-        [self setupTitle];
+        [self setup];
     }
     return self;
 }
@@ -38,6 +41,68 @@
         [self setupGradientLayer];
         [self layoutIfNeeded];
     }
+}
+
+- (void)setup
+{
+    self.loading = NO;
+    self.strokeColor = DEFAULT_COLOR;
+    self.strokeLineWidth = 5;
+    self.cornerRadius = 10;
+    self.timeInterval = 2;
+    self.shapeLayer = [[CAShapeLayer alloc] init];
+    self.gradientLayer = [[CAGradientLayer alloc] init];
+    [self setupCommon];
+    [self setupDefaultTitle];
+}
+
+- (void)setupCommon
+{
+    self.layer.cornerRadius = self.cornerRadius;
+    self.layer.masksToBounds = YES;
+    self.clipsToBounds = YES;
+    self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];
+    [self setTitleColor: DEFAULT_COLOR forState: UIControlStateNormal];
+    self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
+}
+
+- (void)setupDefaultTitle
+{
+    [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
+}
+
+- (void)setupShapeLayer
+{
+    self.shapeLayer.lineWidth = self.strokeLineWidth;
+    self.shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.layer.cornerRadius].CGPath;
+    self.shapeLayer.strokeColor = UIColor.blackColor.CGColor;
+    self.shapeLayer.fillColor = UIColor.clearColor.CGColor;
+}
+
+- (void)setupGradientLayer
+{
+    self.gradientLayer.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self.gradientLayer.colors = [self getColors];
+    self.gradientLayer.startPoint = CGPointMake(0, 0);
+    self.gradientLayer.endPoint = CGPointMake(1, 1);
+    self.gradientLayer.mask = self.shapeLayer;
+}
+
+- (void)setupAnimation
+{
+    CABasicAnimation *strokeStartAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+    strokeStartAnimation.fromValue = [NSNumber numberWithFloat:-1];
+    strokeStartAnimation.toValue = [NSNumber numberWithFloat:1];
+    
+    CABasicAnimation *strokeEndAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    strokeEndAnimation.fromValue = [NSNumber numberWithFloat:0];
+    strokeEndAnimation.toValue = [NSNumber numberWithFloat:1];
+    
+    CAAnimationGroup *strokeAnimationGroup = [[CAAnimationGroup alloc] init];
+    strokeAnimationGroup.duration = self.timeInterval;
+    strokeAnimationGroup.repeatDuration = INFINITY;
+    strokeAnimationGroup.animations = [[NSArray alloc] initWithObjects:strokeStartAnimation, strokeEndAnimation, nil];
+    [self.shapeLayer addAnimation:strokeAnimationGroup forKey:nil];
 }
 
 - (void)startAnimating
@@ -68,55 +133,6 @@
             [self.gradientLayer removeFromSuperlayer];
         }];
     }
-}
-
-- (void)setupCommon
-{
-    self.layer.cornerRadius = 10;
-    self.layer.masksToBounds = YES;
-    self.clipsToBounds = YES;
-    self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];
-    [self setTitleColor: DEFAULT_COLOR forState: UIControlStateNormal];
-    self.contentEdgeInsets = UIEdgeInsetsMake(8, 15, 8, 15);
-}
-
-- (void)setupTitle
-{
-    [self setTitle:@"Spinner Button" forState:UIControlStateNormal];
-}
-
-- (void)setupShapeLayer
-{
-    self.shapeLayer.lineWidth = [self.strokeLineWidth doubleValue];
-    self.shapeLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:self.layer.cornerRadius].CGPath;
-    self.shapeLayer.strokeColor = UIColor.blackColor.CGColor;
-    self.shapeLayer.fillColor = UIColor.clearColor.CGColor;
-}
-
-- (void)setupGradientLayer
-{
-    self.gradientLayer.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    self.gradientLayer.colors = [self getColors];
-    self.gradientLayer.startPoint = CGPointMake(0, 0);
-    self.gradientLayer.endPoint = CGPointMake(1, 1);
-    self.gradientLayer.mask = self.shapeLayer;
-}
-
-- (void)setupAnimation
-{
-    CABasicAnimation *strokeStartAnimation = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
-    strokeStartAnimation.fromValue = [NSNumber numberWithFloat:-1];
-    strokeStartAnimation.toValue = [NSNumber numberWithFloat:1];
-    
-    CABasicAnimation *strokeEndAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    strokeEndAnimation.fromValue = [NSNumber numberWithFloat:0];
-    strokeEndAnimation.toValue = [NSNumber numberWithFloat:1];
-    
-    CAAnimationGroup *strokeAnimationGroup = [[CAAnimationGroup alloc] init];
-    strokeAnimationGroup.duration = self.timeInterval;
-    strokeAnimationGroup.repeatDuration = INFINITY;
-    strokeAnimationGroup.animations = [[NSArray alloc] initWithObjects:strokeStartAnimation, strokeEndAnimation, nil];
-    [self.shapeLayer addAnimation:strokeAnimationGroup forKey:nil];
 }
 
 - (NSMutableArray*)getColors
