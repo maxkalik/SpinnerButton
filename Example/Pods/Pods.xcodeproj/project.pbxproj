@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A934919FD85271EAC8F64FEA83CCC89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
 		2AC3412CCE2EF00ABAC0C7F43B8C96D3 /* Pods-SpinnerButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C571CAF082CC0282E8ACB662D497E6 /* Pods-SpinnerButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		482EC353B6DE565908CC9B0080108333 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		63320C2E3A5BE49CDBFE0FF738F9ED90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		559F4C007467F28689FBF5A243FA639D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		7FD5A2194C249475AC736006C2932CDF /* SpinnerButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D44A158BBD8B6A4C554A478013D6D90B /* SpinnerButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C5CC2A7A905139984BB8E0C405D1166 /* Pods-SpinnerButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DF0CA2C345AEC4B96A79F07012C3828 /* Pods-SpinnerButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F2E358CF8C63912C0D5FFF1CD46DE2 /* SpinnerButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CD82EB817A1648CE6AD467BEBAD663 /* SpinnerButton-dummy.m */; };
-		AB96B8B3FBBBE94BE54D698A4F0BFF73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		C397A14C4B017F284606EFCED95DEC8B /* SpinnerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 203113F708C962A7D1BA7AF5793DCB39 /* SpinnerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E40835B68FE59B7506421F0C50DC63CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		DE78E5AD61C24586EEEB3C0152E646CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E8627340360504A833732E517834DEE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		F528F4766805845045B3A605C5AE1DA7 /* Pods-SpinnerButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0927577434BC4A6055F66AB9AAF538FC /* Pods-SpinnerButton_Example-dummy.m */; };
 		F691DB272FBA87F036FFBF7DBBEF7F61 /* SpinnerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFC941F24C11628FF6D6E73E6BA1D6 /* SpinnerButton.m */; };
 		FFD98C864CBF4F9D6E965A14070DBBF7 /* Pods-SpinnerButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E2C6B73B22D44AEAE5FB8B20BD122 /* Pods-SpinnerButton_Tests-dummy.m */; };
@@ -49,10 +49,8 @@
 		2B7B94F4E18C8011475369770AA1E6C3 /* Pods-SpinnerButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpinnerButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2F5ADAE37CFC34C1014620082B2CBF5D /* Pods-SpinnerButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpinnerButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		302D31EE08C08B6B9A8B67D7107438ED /* SpinnerButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpinnerButton.debug.xcconfig; sourceTree = "<group>"; };
-		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		3168F48F37EA5A427DC0DE8DE458488D /* Pods-SpinnerButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpinnerButton_Tests-Info.plist"; sourceTree = "<group>"; };
 		3946F9BDCCE9922479F993518AB2FDC3 /* Pods-SpinnerButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpinnerButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		511038C7696BB439BB6D0663241AC170 /* Pods-SpinnerButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpinnerButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		65A3DF43C583F6B65C6E8198D69E2E74 /* SpinnerButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SpinnerButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		67C571CAF082CC0282E8ACB662D497E6 /* Pods-SpinnerButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpinnerButton_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -68,9 +66,11 @@
 		BA58F6658CFAA34A3EB4F49A9745BE06 /* Pods_SpinnerButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpinnerButton_Tests.framework; path = "Pods-SpinnerButton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF553C28C81CF10D0B3D879AA0E49BD /* SpinnerButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpinnerButton.release.xcconfig; sourceTree = "<group>"; };
 		CD117B4B347FE53551C0FEAF1F76EFD2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D36E2C6B73B22D44AEAE5FB8B20BD122 /* Pods-SpinnerButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpinnerButton_Tests-dummy.m"; sourceTree = "<group>"; };
 		D44A158BBD8B6A4C554A478013D6D90B /* SpinnerButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpinnerButton-umbrella.h"; sourceTree = "<group>"; };
 		D453BEA9F2E827773431D7A6C0CBFDB9 /* Pods_SpinnerButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpinnerButton_Example.framework; path = "Pods-SpinnerButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EFB10FD94AEEFEF68FC0E265F03667A2 /* Pods-SpinnerButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpinnerButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F5CD82EB817A1648CE6AD467BEBAD663 /* SpinnerButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpinnerButton-dummy.m"; sourceTree = "<group>"; };
 		FCF0F70A97B312C5A1F17F5F5034D381 /* Pods-SpinnerButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpinnerButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40835B68FE59B7506421F0C50DC63CB /* Foundation.framework in Frameworks */,
+				DE78E5AD61C24586EEEB3C0152E646CA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63320C2E3A5BE49CDBFE0FF738F9ED90 /* Foundation.framework in Frameworks */,
-				482EC353B6DE565908CC9B0080108333 /* UIKit.framework in Frameworks */,
+				E8627340360504A833732E517834DEE4 /* Foundation.framework in Frameworks */,
+				1A934919FD85271EAC8F64FEA83CCC89 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB96B8B3FBBBE94BE54D698A4F0BFF73 /* Foundation.framework in Frameworks */,
+				559F4C007467F28689FBF5A243FA639D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +153,15 @@
 			);
 			name = "Pods-SpinnerButton_Example";
 			path = "Target Support Files/Pods-SpinnerButton_Example";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7AE45C92151AD35B718793811A6763C2 /* Development Pods */ = {
@@ -207,15 +216,6 @@
 				910EDEB4E19A96E526797B71850A78CF /* Pods-SpinnerButton_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
-				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		FA33350CD43145B70B5B57D747F87843 /* SpinnerButton */ = {
@@ -414,40 +414,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09AF80302835E9F47EB8D76FC20E6066 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69E475C4E281F26DBF4B67930D3746F7 /* Pods-SpinnerButton_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4EBC741460BC710C963D24CAAB3BC925 /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -474,6 +441,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -512,12 +480,11 @@
 			};
 			name = Debug;
 		};
-		5143472AAC95A723CF58EA59115013B5 /* Release */ = {
+		41005461F91489308327FB0BA5E75E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB10FD94AEEFEF68FC0E265F03667A2 /* Pods-SpinnerButton_Example.release.xcconfig */;
+			baseConfigurationReference = 69E475C4E281F26DBF4B67930D3746F7 /* Pods-SpinnerButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -540,17 +507,48 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5ABCF26564E98BEF32D605DC322A7062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3946F9BDCCE9922479F993518AB2FDC3 /* Pods-SpinnerButton_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8748606C69B5324A0378E04797507F6E /* Debug */ = {
+		7B61426EF1C0D696948C88A9E0B4A72E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 302D31EE08C08B6B9A8B67D7107438ED /* SpinnerButton.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -577,11 +575,11 @@
 			};
 			name = Debug;
 		};
-		87682CCD53841565017B6D9990E1C105 /* Release */ = {
+		B241A389A40BCE23F11C02268BE471AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEF553C28C81CF10D0B3D879AA0E49BD /* SpinnerButton.release.xcconfig */;
+			baseConfigurationReference = 2F5ADAE37CFC34C1014620082B2CBF5D /* Pods-SpinnerButton_Tests.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -590,26 +588,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SpinnerButton/SpinnerButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SpinnerButton/SpinnerButton-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SpinnerButton/SpinnerButton.modulemap";
-				PRODUCT_MODULE_NAME = SpinnerButton;
-				PRODUCT_NAME = SpinnerButton;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		A40FB7C4B9460AE765A736AB575EEB32 /* Release */ = {
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -636,6 +634,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -670,12 +669,11 @@
 			};
 			name = Release;
 		};
-		D9C899C5704AF98DDD129B60B4EE5077 /* Release */ = {
+		E7F44B43D3153C67737502050D2469F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3946F9BDCCE9922479F993518AB2FDC3 /* Pods-SpinnerButton_Tests.release.xcconfig */;
+			baseConfigurationReference = EFB10FD94AEEFEF68FC0E265F03667A2 /* Pods-SpinnerButton_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -684,12 +682,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Example/Pods-SpinnerButton_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -704,12 +702,10 @@
 			};
 			name = Release;
 		};
-		ED7E7BC715087945F7E036156992231F /* Debug */ = {
+		FF033952ECAC4769C913D6AB55A2BD73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F5ADAE37CFC34C1014620082B2CBF5D /* Pods-SpinnerButton_Tests.debug.xcconfig */;
+			baseConfigurationReference = BEF553C28C81CF10D0B3D879AA0E49BD /* SpinnerButton.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -718,24 +714,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SpinnerButton/SpinnerButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpinnerButton/SpinnerButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpinnerButton_Tests/Pods-SpinnerButton_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SpinnerButton/SpinnerButton.modulemap";
+				PRODUCT_MODULE_NAME = SpinnerButton;
+				PRODUCT_NAME = SpinnerButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -743,8 +739,8 @@
 		35AE4247EF2BF87D416F11FB77909863 /* Build configuration list for PBXNativeTarget "SpinnerButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8748606C69B5324A0378E04797507F6E /* Debug */,
-				87682CCD53841565017B6D9990E1C105 /* Release */,
+				7B61426EF1C0D696948C88A9E0B4A72E /* Debug */,
+				FF033952ECAC4769C913D6AB55A2BD73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -752,8 +748,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EBC741460BC710C963D24CAAB3BC925 /* Debug */,
-				A40FB7C4B9460AE765A736AB575EEB32 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -761,8 +757,8 @@
 		68035E7B1E1EDE11B06A02E8BFEEA7D0 /* Build configuration list for PBXNativeTarget "Pods-SpinnerButton_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7E7BC715087945F7E036156992231F /* Debug */,
-				D9C899C5704AF98DDD129B60B4EE5077 /* Release */,
+				B241A389A40BCE23F11C02268BE471AE /* Debug */,
+				5ABCF26564E98BEF32D605DC322A7062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -770,8 +766,8 @@
 		E74F38FB3F879574F0266D200C9AC6ED /* Build configuration list for PBXNativeTarget "Pods-SpinnerButton_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09AF80302835E9F47EB8D76FC20E6066 /* Debug */,
-				5143472AAC95A723CF58EA59115013B5 /* Release */,
+				41005461F91489308327FB0BA5E75E57 /* Debug */,
+				E7F44B43D3153C67737502050D2469F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

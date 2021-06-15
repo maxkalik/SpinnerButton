@@ -4,6 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+IB_DESIGNABLE
 @interface SpinnerButton : UIButton
 
 #pragma mark - Properties
@@ -12,16 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, getter=isLoading) BOOL loading;
 
 /// Define a color of the animated stroke
-@property (nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, strong) IBInspectable UIColor *strokeColor;
 
 /// Define mulitple colors to make gradient in the animated stroke
-@property (nonatomic, strong, nullable) NSArray *strokeColors;
+@property (nonatomic, strong) NSArray *strokeColors;
 
 /// Stroke line width of the animated border (default: 5)
-@property (nonatomic, strong, nullable) NSNumber *strokeLineWidth;
+@property (nonatomic, assign) IBInspectable CGFloat strokeLineWidth;
 
 /// Time interval of animation duration
-@property (nonatomic, assign) CFTimeInterval timeInterval;
+@property (nonatomic, assign) IBInspectable int timeInterval;
 
 #pragma mark - Methods
 
