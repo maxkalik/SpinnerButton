@@ -48,6 +48,7 @@
     self.loading = NO;
     self.strokeColor = DEFAULT_COLOR;
     self.strokeLineWidth = 5;
+    self.cornerRadius = 10;
     self.timeInterval = 2;
     self.shapeLayer = [[CAShapeLayer alloc] init];
     self.gradientLayer = [[CAGradientLayer alloc] init];
@@ -57,7 +58,7 @@
 
 - (void)setupCommon
 {
-    self.layer.cornerRadius = 10;
+    self.layer.cornerRadius = self.cornerRadius;
     self.layer.masksToBounds = YES;
     self.clipsToBounds = YES;
     self.titleLabel.font = [UIFont fontWithName: @"futura" size: 20];

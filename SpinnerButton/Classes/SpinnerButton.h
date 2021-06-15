@@ -21,6 +21,9 @@ IB_DESIGNABLE
 /// Stroke line width of the animated border (default: 5)
 @property (nonatomic, assign) IBInspectable CGFloat strokeLineWidth;
 
+/// Corner radius (default: 10)
+@property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
+
 /// Time interval of animation duration
 @property (nonatomic, assign) IBInspectable int timeInterval;
 
